@@ -1,0 +1,70 @@
+Library
+
+-- Started with these classes
+
+Books
+    BookID int
+    Title string    
+    Author string
+    Genre string
+    ISBN string
+    DatePublished datetime
+    Publisher string
+    AvailableCopies int
+
+Members
+    MemberID int
+    FirstName string
+    Surname string
+    DateOfBirth datetime
+    IsChild bool
+    Age int
+    Active bool
+
+
+Borrower
+    MemberID int
+    BookID int
+    StartDate datetime
+    DueDate datetime
+    ReturnDate datetime
+    OverdueDate datetime
+
+Create a Service that loads some books into the sample API
+
+Insert 3 to 5 sample books first
+
+A member can borrow more than one book at a time
+    Assign currentDate to StartDate
+    DueDate is two weeks from StartDate
+    Overdue flag?
+
+Books
+    // Initial 5 methods
+    GetAllBooks
+    GetBookById
+    Add
+    UpdateBookById
+    DeleteBookById (delete book by name instead?)
+    // Subsequently added these in the afternoon
+    SearchByTitle
+    SearchByBookAuthor
+    
+
+Members
+    // Initial 4 methods
+    GetAllMembers
+    GetMemberByID
+    Update
+    DeleteMembers (decided to set to inactive instead)
+    // Subsequently added these in the afternoon
+    SetMemberToInactive  -- decided not to use this
+    SearchMembersByFirstName
+    SearchMembersBySurname
+
+Borrowers
+    -- Validation
+    Check if the Library member exists
+    Check whether the Library member is active or inactive
+
+Librarians / Staff?
