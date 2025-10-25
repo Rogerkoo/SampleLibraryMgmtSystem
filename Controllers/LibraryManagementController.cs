@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace SampleLibraryMgmtSystem.Controllers
 {
+    #region SQlite In-Memory DB Setup
+
+    #endregion
+
     [ApiController]
     [Route("[controller]")]
     public class LibraryManagementController : ControllerBase
@@ -37,7 +41,7 @@ namespace SampleLibraryMgmtSystem.Controllers
 
         [HttpGet]
         [Route("SearchBookByTitle/{bookTitle}")]
-        public ActionResult<Books> SearchBookByTitle([FromQuery]string bookTitle)
+        public ActionResult<Books> SearchBookByTitle([FromQuery] string bookTitle)
         {
             // Implementation for checking book availability
             var book = LibraryManagementService.GetBookByTitle(bookTitle);
@@ -46,7 +50,7 @@ namespace SampleLibraryMgmtSystem.Controllers
 
             return book;
         }
-        
+
         [HttpGet]
         [Route("SearchBookByAuthor/{authorName}")]
         public ActionResult<Books> SearchBookByAuthor([FromQuery] string authorName)
