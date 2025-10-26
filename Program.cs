@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SampleLibraryMgmtSystem.Data;
+using SampleLibraryMgmtSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,20 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Register LibraryManagementService
+builder.Services.AddScoped<LibraryManagementService>();
+
 var app = builder.Build();
+
+// Ensure database is migrated and seeded on startup
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    // Apply any pending migrations
+    db.Database.Migrate();
+    // Seed initial data (idempotent)
+    db.InsertIntialData();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

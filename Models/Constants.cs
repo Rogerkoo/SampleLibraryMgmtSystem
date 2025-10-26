@@ -13,4 +13,8 @@ public class Constants
     public const string NO_MEMBERS_WITH_THIS_SURNAME = "There are no members found with this surname.";
     public const string MEMBER_NOT_FOUND = "Member Not Found";
     public const string MEMBER_INACTIVE = "Member is Inactive";
+    public const string BOOK_NOT_AVAILABLE = "There are no more copies left for this book to be borrowed.";
+    public const string MEMBER_DID_NOT_BORROW = "Member did not borrow this book.";
+    public const string MEMBER_ALREADY_BORROWED = "Member has already borrowed this book.";
+    public const string ANOTHER_MEMBER_ALREADY_BORROWED = "Another member has borrowed this book.";
 }

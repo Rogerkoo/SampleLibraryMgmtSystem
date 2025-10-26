@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace SampleLibraryMgmtSystem.Models;
 
-    public class Members
+    public class Members : EntityBase
     {
         public int MemberId { get; set; }
         public string FirstName { get; set; }

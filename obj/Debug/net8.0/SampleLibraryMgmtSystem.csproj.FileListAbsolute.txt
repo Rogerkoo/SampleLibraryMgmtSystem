@@ -1,5 +1,7 @@
 D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\appsettings.Development.json
 D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\appsettings.json
+D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\Tests\IntegrationTest\obj\IntegrationTest.csproj.nuget.dgspec.json
+D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\Tests\IntegrationTest\obj\project.assets.json
 D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\SampleLibraryMgmtSystem.exe
 D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\SampleLibraryMgmtSystem.deps.json
 D:\Development\SampleLibraryMgmtSystem\bin\Debug\net8.0\SampleLibraryMgmtSystem.runtimeconfig.json

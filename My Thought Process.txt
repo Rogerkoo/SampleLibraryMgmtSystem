@@ -11,6 +11,8 @@ Books
     DatePublished datetime
     Publisher string
     AvailableCopies int
+    DateAdded datetime
+    DateUpdated datetime
 
 Members
     MemberID int
@@ -20,6 +22,8 @@ Members
     IsChild bool
     Age int
     Active bool
+    DateAdded datetime
+    DateUpdated datetime
 
 
 Borrower
@@ -29,6 +33,8 @@ Borrower
     DueDate datetime
     ReturnDate datetime
     OverdueDate datetime
+    DateAdded datetime
+    DateUpdated datetime    
 
 Create a Service that loads some books into the sample API
 
@@ -49,6 +55,8 @@ Books
     // Subsequently added these in the afternoon
     SearchByTitle
     SearchByBookAuthor
+    26th October 2025
+        Search using multiple criterias
     
 
 Members
@@ -58,7 +66,7 @@ Members
     Update
     DeleteMembers (decided to set to inactive instead)
     // Subsequently added these in the afternoon
-    SetMemberToInactive  -- decided not to use this
+    SetMemberToInactive  -- decided not to use this. can use normal Update
     SearchMembersByFirstName
     SearchMembersBySurname
 
@@ -66,5 +74,13 @@ Borrowers
     -- Validation
     Check if the Library member exists
     Check whether the Library member is active or inactive
-
+    26th October 2025 (midnight)
+        Have an overdue flag (implemented)
+        Overdue statistics (implemented on 26th October 2025 late morning)
 Librarians / Staff?
+
+
+
+To be enhanced in the future
+    Fines can be imposed for overdue books (advanced)
+    

@@ -1,0 +1,36 @@
+List of Endpoints
+
+
+testsqlite-connection
+
+Books
+    GetAllBooks
+    GetBookById/{id}
+    GetBookByAuthor
+    SearchByBookAuthor
+    SearchByTitle
+    SearchBooksCaseInsensitive
+    AddBooks 
+    UpdateBookById
+    DeleteBookById
+Members
+    GetAllMembers
+    GetMemberById
+    SearchMembersByFirstName
+    SearchMembersBySurname
+    AddMembers
+    UpdateMemberById
+    SetMemberToInactive
+    DeleteMembers
+Borrowers
+    GetAllBorrowers
+    GetBorrowerById
+    GetMemberBorrowingHistory
+    GetBookBorrowingHistory
+    GetOverdueBooks
+    GetActiveBorrowings
+    GetOverdueStatistics
+    BorrowBooks
+    ReturnBooks
+    UpdateBorrowingDueDate (impelmented to update the due date / for testing if the due date is wrong)
+    DeleteBorrower (implemented to clean up, not for go live / actual)
